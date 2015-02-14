@@ -33,10 +33,10 @@ def main():
     print "Done."
 
 def show_plot(desc, m):
-    plot = plt.imshow(m)
+    plot = plt.imshow(m, origin = 'lower')
     plot.set_cmap('gray')
     
-    plot2 = plt.imshow(invert_x(m))
+    plot2 = plt.imshow(invert_x(m), origin = 'lower')
     plot2.set_cmap('gray')
     #plt.set_label(desc) #need to figure out how to set TITLE/LEGEND on graph
     
