@@ -1,14 +1,17 @@
 """
-selfSimilarity.py
+musicSelfSim.py
 Displays a pitch and timbre self-similarity matrix.
+Track ID: TRVSKVZ1467FC8250D
+Track Name: Worldstar by Childish Gambino
+Album Name: Because the Internet
+
 By Joe Paxton
 13 February 2015 
 
 Usage: 
-    python selfSimilarity.py timbre AUDIO_FILE.mp3
-    python selfSimilarity.py pitches AUDIO_FILE.mp3
+    python musicSelfSim.py worldstar.mp3
 Example:
-    python selfSimilarity.py pitches "C:\users\your_name\desktop\worldstar.mp3"
+    python musicSelfSim.py "C:\users\your_name\desktop\worldstar.mp3"
 """
 import numpy as n
 import math as mat
@@ -94,21 +97,6 @@ def matrix():
 
     print 'Finished building matrix...'          
     return timbreMatrix, pitchesMatrix
-
-"""
-    for items in range(len(segments)):
-        for j in range(len(segments)):
-            dist = euclid(segments[items].timbre, segments[j].timbre)
-            timbreMatrix[items][j] = dist
-            
-    # Same thing, but for the pitches     
-    for i in range(len(segments)):
-        for ii in range(len(segments)):
-            dist = euclid(segments[i].pitches, segments[ii].pitches)
-            pitchesMatrix[i][ii] = dist
-            
-    return timbreMatrix, pitchesMatrix    
-"""
 
 def euclid(a,b):
     sum = 0.0
