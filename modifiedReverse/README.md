@@ -1,5 +1,5 @@
 # Problem
-Is it possible to create a musically appealing song reversing one attribute (bars, beats, tatums, sections, and segments) at a time?
+Is it possible to create a musically appealing song reversing one attribute (bars, beats, tatums, sections, or segments) at a time?
 
 # Question
 1. What attributes from [EchoNest Remix] in the audio file will be reversed? Do any of them seem musically appealing?
