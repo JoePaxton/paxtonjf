@@ -70,20 +70,10 @@ def matrix():
     timbreMatrix = n.zeros(segs)
     pitchesMatrix = n.zeros(segs)
 
-    # Goes through the segments and assigns the
-    # appropriate distance for the timbre's
-    # self-similarity
-    #for items in range(len(segments)):
-
-    # Goes through the segments and assigns the
-    # appropriate distance for the timbre's
-    # self-similarity
-
     print "Building Matrix...segments = ", len(segments)
     
     for i in range(len(segments)):
         for j in range(len(segments)):
-            #dist = euclid(segments[i].timbre, segments[j].timbre)
             dist = distance.euclidean(segments[i].timbre, segments[j].timbre)
             #print 'i=',i, ' dist=', dist
             timbreMatrix[i][j] = dist            
@@ -91,20 +81,11 @@ def matrix():
     # Same thing, but for the pitches     
     for i in range(len(segments)):
         for ii in range(len(segments)):
-            #dist = euclid(segments[i].pitches, segments[ii].pitches)
             dist = distance.euclidean(segments[i].pitches, segments[ii].pitches)
             pitchesMatrix[i][ii] = dist
 
     print 'Finished building matrix...'          
     return timbreMatrix, pitchesMatrix
-
-def euclid(a,b):
-    sum = 0.0
-    dist = 0.0
-    for i in range(len(a)):
-        sum += (a[i]- b[i])**2
-    dist = mat.sqrt(sum)
-    return dist
-
+ 
 if __name__ == "__main__":
     main()
