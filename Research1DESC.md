@@ -7,7 +7,7 @@ another plot that shows the average Timbre during each segment throughout the so
 
 **Resources**
 
-[matplotlib.org]: http://matplotlib.org/
+http://matplotlib.org/
 
 **Explanation**
 
