@@ -25,5 +25,4 @@ for seg in segments:
 ```
 
 **Resources**
-
 [matplotlib.org]: http://matplotlib.org/  
