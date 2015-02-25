@@ -24,5 +24,4 @@ for seg in segments:
     collect_t.append(seg.timbre)
 ```
 
-**Resources**
 [matplotlib.org]: http://matplotlib.org/
