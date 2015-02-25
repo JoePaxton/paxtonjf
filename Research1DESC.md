@@ -12,7 +12,7 @@ http://matplotlib.org/
 **Explanation**
 
 First you need to get the Track ID from the song you want to analyze. Then you can continue making your
-graph the way you want it to look using matplotlib. After this, I used a scatter and bar plot from 
+graph the way you want it to look using http://matplotlib.org/. After this, I used a scatter and bar plot from 
 the [matplotlib.org] API and fed the data of the mean of pitches and timbre into two different plot.
 
 ```python
