@@ -11,7 +11,7 @@ First you need to get the Track ID from the song you want to analyze. Then you c
 graph the way you want it to look using matplotlib. After this, I used a scatter and bar plot from 
 the [matplotlib.org] API and fed the data of the mean of pitches and timbre into two different plot.
 
-'''python
+```python
 import echonest.remix.audio as audio
 
 trackID = <'TRACK_ID_OF_YOUR_FAVORITE_SONG'>
@@ -22,7 +22,7 @@ collect_t = audio.AudioQuantumList()
 for seg in segments:
     collect.append(seg.pitches)
     collect_t.append(seg.timbre)
-'''
+```
 
 **Resources**
 
