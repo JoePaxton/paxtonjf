@@ -5,6 +5,10 @@
 Displays one plot that shows the average Pitches during each segment throughout the song and displays
 another plot that shows the average Timbre during each segment throughout the song.
 
+**Resources**
+
+[matplotlib.org]: http://matplotlib.org/
+
 **Explanation**
 
 First you need to get the Track ID from the song you want to analyze. Then you can continue making your
@@ -23,7 +27,3 @@ for seg in segments:
     collect.append(seg.pitches)
     collect_t.append(seg.timbre)
 ```
-
-**Resources**
-
-[matplotlib.org]: http://matplotlib.org/
