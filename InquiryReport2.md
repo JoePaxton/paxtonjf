@@ -1,12 +1,10 @@
 #Problem
 
-We want to shift the tempo (the pace of a musical composition) of a track in order to transition into another track
-with a smooth transition. Does [EchoNest] provide us with any answers?
+We want to alter the tempo (the pace of a musical composition) of a track in order to output an altered tempo audio file. Does [EchoNest] provide us with any answers?
 
 # Questions
 1. Does [EchoNest] provide us with the tools/attributes to get tempo and the time signature?
-2. Does shifting the tempo of a track sound "smooth" when you transition into another?
-3. Can we shift other attributes of a track in order to make a smooth transition?
+2. Does shifting the tempo of a track sound "smooth" when you alter it?
 
 # Resources
 1. [EchoNest]
