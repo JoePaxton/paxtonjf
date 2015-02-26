@@ -4,7 +4,7 @@ We want to alter the tempo (the pace of a musical composition) of a track in ord
 
 # Questions
 1. Does [EchoNest] provide us with the tools/attributes to get tempo and the time signature?
-2. Does shifting the tempo of a track sound "smooth" when you alter it?
+2. Does compressing or expanding beats help us change tempo?
 
 # Resources
 1. [EchoNest]
@@ -35,6 +35,9 @@ This example can be found on the [EchoNest Remix] API and it comes in a compress
 echo-nest-remix-examples. This expands the entire track, beat by beat. You can alter the timeScale
 function to change the time of a beat and you can create a new track from these modified beats. 
 When you import dirac, it only works on raw data for the first parameter and a floating-point ratio.
+If the ratio is greater than 0.5 than you can notice a difference in the pace of the track. The more
+changes you make to the ratio the longer the time signature. This alters the tempo dramatically if
+you are familiar with the particular audio file you have uploaded.
 
 ```python
 import math
@@ -59,7 +62,7 @@ out.encode(output_filename)
 ``` 
 The render function gets the raw audio data from the beat and then is scaled by calling the
 dirac.timeScale() function. After this we create a new AudioData object and append it to
-an output list and write the output data.
+an output list and write the output data. 
 
 [EchoNest]: http://developer.echonest.com/docs/v4/
 [EchoNest Remix]: http://echonest.github.io/remix/apidocs/  
