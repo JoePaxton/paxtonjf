@@ -32,12 +32,12 @@ Running this code only prints "Lateralus" as stated above the code.
 ### 2. The relevance of [stretch.py]:
 
 This example can be found on the [EchoNest Remix] API and it comes in a compressed zip folder of 
-echo-nest-remix-examples. This expands the entire track, beat by beat. You can alter the timeScale
-function to change the time of a beat and you can create a new track from these modified beats. 
-When you import dirac, it only works on raw data for the first parameter and a floating-point ratio.
-If the ratio is greater than 0.5 than you can notice a difference in the pace of the track. The more
-changes you make to the ratio the longer the time signature. This alters the tempo dramatically if
-you are familiar with the particular audio file you have uploaded.
+echo-nest-remix-examples. This expands or shrinks the entire track, beat by beat. You can manipulate
+the timeScale function to change the time of a beat and you can create a new track from these modified
+beats. When you import dirac, it only works on raw data for the first parameter and a floating-point 
+ratio. If the ratio is greater than 0.5 than you can notice a difference in the pace of the track. The
+higher the number you make the ratio the longer the time signature and expands the beats. This alters the
+tempo dramatically if you are familiar with the particular audio file you have uploaded.
 
 ```python
 import math
