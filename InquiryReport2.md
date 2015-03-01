@@ -1,6 +1,7 @@
 #Problem
 
-We want to alter the tempo (the pace of a musical composition) of a track in order to output an altered tempo audio file. Does [EchoNest] provide us with any answers?
+We want to slow down or speed up beats to produce different tempos (the pace of a musical composition) of a track 
+in order to output an altered tempo audio file. Does [EchoNest] provide us with any answers?
 
 # Questions
 1. Does [EchoNest] provide us with the tools/attributes to get tempo and the time signature?
@@ -13,21 +14,16 @@ We want to alter the tempo (the pace of a musical composition) of a track in ord
 ### 1. [EchoNest] tempo attribute:
 
 The [EchoNest] provides us with infromation about the track's attributes. You can find the tempo and the
-time signature of a track. When we print out 't', the only thing that comes up on the console is "Lateralus".
-This is simply the song name from the "Tool Lateralus" album. I am not sure how to get the actual tempo
-and time_signature as an actual value, but I will look at this more carefully in the [EchoNest] API. 
+time signature of a track. When you print track.tempo a floating-point decimal value appears on the console,
+which corresponds to the tempo. Can we use these specific tempo values in order to manipulate the original audio?
 
 ```python
 import pyechonest.track as track
 
 track = track.track_from_filename('C:\users\joe\desktop\lateralus.mp3')
 track.tempo
-print track
-track.time_signature
-print track
-
+print track.tempo
 ```
-Running this code only prints "Lateralus" as stated above the code.
 
 ### 2. The relevance of [stretch.py]:
 
