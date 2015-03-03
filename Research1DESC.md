@@ -8,15 +8,11 @@ Displays a Bar and Scatter plot for Timbres and Pitches for each Segment through
 
 I want to expand on different visualizations on attributes for different tracks and be able to produce animation(s) while the track is playing. By learning on how to plot different attributes in a 2D and a 3D graph, it will help me understand how matplotlib stores data from Echo Nest into functions that their API provides.
 
-**Resources**
-
-http://matplotlib.org/
-
 **Explanation**
 
 First you need to get the Track ID from the song you want to analyze. Then you can continue making your
-graph the way you want it to look using http://matplotlib.org/. After this, I used a scatter and bar plot from 
-the [matplotlib.org] API and fed the data of the mean of pitches and timbre into two different plots. 
+graph the way you want it to look using [matplotlib]. After this, I used a scatter and bar plot from 
+the [matplotlib] API and fed the data of the mean of pitches and timbre into two different plots. 
 
 ```python
 import echonest.remix.audio as audio
@@ -55,3 +51,6 @@ in the list for segments, pitches, and timbre instead of just feeding it the fir
     plt.savefig('3D_Plot_Pitch_and_Timbre.png',dpi=600) 
     plt.show()
 ```
+
+**Resources**
+[matplotlib]: http://matplotlib.org/
