@@ -53,4 +53,7 @@ in the list for segments, pitches, and timbre instead of just feeding it the fir
 ```
 
 **Resources**
+[matplotlib]
+
+
 [matplotlib]: http://matplotlib.org/
