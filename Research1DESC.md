@@ -5,6 +5,10 @@
 Displays a Bar and scatter plot for Timbres and Pitches for each Segment throughout the track, outputting four plots. In addition, there is a 3D plot of Timbre
 and Pitches by Segment. These images will be saved to the current directory you are working in when running this program. In total, there are five plots that will be saved.
 
+**Inspiration**
+
+I want to expand on different visualizations on attributes for different tracks and be able to produce animation(s) while the track is playing. By learning on how to plot different attributes in a 2D and a 3D graph, it will help me understand how matplotlib stores data from Echo Nest into functions that their API provides.
+
 **Resources**
 
 http://matplotlib.org/
