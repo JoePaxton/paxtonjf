@@ -3,7 +3,7 @@
 **Purpose**
 
 Displays a Bar and scatter plot for Timbres and Pitches for each Segment throughout the track, outputting four plots. In addition, there is a 3D plot of Timbre
-and Pitches by Segment. These images will be saved to the current directory you are working in when running this program.
+and Pitches by Segment. These images will be saved to the current directory you are working in when running this program. In total, there are five plots that will be saved.
 
 **Resources**
 
